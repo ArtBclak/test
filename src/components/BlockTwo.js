@@ -41,10 +41,10 @@ function BlockTwo(){
     
     return( 
         <section className='blocktwo container'>
-            <h3 className='subtitel'>Main target</h3>
+            <h3 className='subtitel-blk subtitel-two'>Main target</h3>
             <div  className='blocktwo-l'>
                 <div className='blocktwo-l__year'><p className='year-p'>1920</p></div>
-                <div className='blocktwo-l__photo'><img className='photo-img' src={img} /></div>
+                <div className='blocktwo-l__photo'><img className='photo-img' loading='lazy' src={img} /></div>
             </div>
             <div  className='blocktwo-r'>
                 <div className='blocktwo-r__info'>

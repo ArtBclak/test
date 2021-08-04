@@ -9,13 +9,15 @@ const navA = {
     position: 'absolute',
 }
 const navF = {
-    width: '90%',
+    width: '93%',
     position: 'fixed',
     top: 0,
+    left: '50% ',
+    transform: 'translate(-50%)',
     background: '#7cfff8',
     height: '7vh',
-    padding: '0 5%',
-    zIndex: ' 100'
+    zIndex: ' 100',
+    padding: '0 5rem'
 }
 
 
