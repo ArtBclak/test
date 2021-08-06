@@ -1,10 +1,17 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
+
+
 import imgOne from '../img/section/b3-1.svg'
+
 import imgTwo from '../img/section/b3-2.svg'
 import check from '../img/check.svg'
 
-function BlockThree(props){
+
+
+
+function BlockThree(){
+
 
     const box = [
         { titel: 'size', value: ['S / M', 'M / XL', 'XXL']},
@@ -19,7 +26,7 @@ function BlockThree(props){
 
 
 
-    const loading = <div className='preloader'><div className='preloader-block'></div></div>
+
 
     return(
         <section className='blockthree container'>
@@ -38,7 +45,10 @@ function BlockThree(props){
                     )
                 })}
                 </div>
-                <img className='blockthree-left__img' loading='lazy' src={imgOne} />
+                
+                <img className='blockthree-left__img' loading='lazy' src={imgOne} /> 
+                
+                
                 
             </div>
             <div className='blockthree-right'>
