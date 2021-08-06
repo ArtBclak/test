@@ -35,11 +35,11 @@
 }
 
 .subtitel-blk {
-  font-family: Cera Pro;
+  font-family: Cera Pro, sans-serif;
   font-weight: 500;
-  font-size: 3rem;
-  line-height: 3.8rem;
-  color: #000000;
+  font-size: 2.2rem;
+  line-height: 2.8rem;
+  letter-spacing: 0.03em;
 }
 
 .nav {
@@ -510,11 +510,6 @@
 
 .blockfour .subtitel-four {
   grid-area: subytitel;
-  font-family: Cera Pro, sans-serif;
-  font-weight: 500;
-  font-size: 2.2rem;
-  line-height: 2.8rem;
-  letter-spacing: 0.03em;
 }
 
 .blockfour .blockfour-name {
@@ -684,6 +679,109 @@
   width: 6rem;
 }
 
+.blockfive {
+  margin-top: 10rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.five-left {
+  margin: 0 auto;
+}
+
+.five-titel {
+  margin-top: 3.3rem;
+}
+
+.five-px {
+  width: 100%;
+  margin-top: 2.7rem;
+  display: flex;
+}
+
+.five-px__one {
+  width: 78%;
+  text-align: end;
+  font-family: Cera Pro;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+
+.five-px__two {
+  width: 21%;
+  text-align: end;
+  font-family: Cera Pro;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 2rem;
+}
+
+.five-test {
+  display: flex;
+  transform: translate(0, -0.5rem);
+}
+
+.test-input {
+  width: 80%;
+  border: none;
+  background: #C4C4C4;
+  font-family: Cera Pro;
+  font-weight: 400;
+  font-size: 1.6rem;
+  height: 2.4rem;
+}
+
+.test-regular {
+  list-style-type: none;
+  font-family: Cera Pro;
+  font-weight: 400;
+  margin-left: .2rem;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  transform: translate(0, -0.5rem);
+}
+
+.test-medium {
+  font-family: Cera Pro;
+  font-weight: 500;
+  margin-left: 1rem;
+  list-style-type: none;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  transform: translate(0, -0.5rem);
+}
+
+.five-name {
+  margin-top: 2rem;
+  font-family: Cera Pro, sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.five-txt {
+  width: 70%;
+  margin: 5rem auto;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 132.4%;
+  color: #292929;
+}
+
+.five-geometric {
+  transform: translate(0, 1rem);
+  font-family: Cera Pro, sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  letter-spacing: 0.03em;
+}
+
 @media (min-width: 759px) {
   .container {
     width: 89.85vw;
@@ -700,6 +798,10 @@
   .titel-blk {
     font-size: 3.6rem;
   }
+  .subtitel-blk {
+    font-size: 2.4rem;
+    line-height: 3rem;
+  }
 }
 
 @media (min-width: 1439px) {
@@ -710,11 +812,42 @@
     font-size: 5.6rem;
     line-height: 7rem;
   }
+  .subtitel-blk {
+    font-size: 3rem;
+    line-height: 3.8rem;
+  }
 }
 
 @media (min-width: 1919px) {
   .container {
     width: 75vw;
+  }
+}
+
+@media (min-width: 759px) {
+  .nav {
+    width: 38%;
+  }
+  .hamburger {
+    margin-right: 6.2rem;
+  }
+}
+
+@media (min-width: 1439px) {
+  .hamburger {
+    margin-right: 7.6rem;
+  }
+}
+
+@media (min-width: 1919px) {
+  .nav {
+    width: 43%;
+  }
+  .hamburger {
+    margin-right: 11.7rem;
+  }
+  .h-links {
+    width: 5.5rem;
   }
 }
 
@@ -786,33 +919,6 @@
   .titel {
     font-size: 7.2rem;
     margin-top: 21.7rem;
-  }
-}
-
-@media (min-width: 759px) {
-  .nav {
-    width: 38%;
-  }
-  .hamburger {
-    margin-right: 6.2rem;
-  }
-}
-
-@media (min-width: 1439px) {
-  .hamburger {
-    margin-right: 7.6rem;
-  }
-}
-
-@media (min-width: 1919px) {
-  .nav {
-    width: 43%;
-  }
-  .hamburger {
-    margin-right: 11.7rem;
-  }
-  .h-links {
-    width: 5.5rem;
   }
 }
 
@@ -965,10 +1071,6 @@
   .blockfour {
     grid-template-rows: 8.4rem 13rem 11rem 40.1rem;
   }
-  .blockfour .subtitel-four {
-    font-size: 2.4rem;
-    line-height: 3rem;
-  }
   .blockfour .blockfour-txt {
     font-size: 1.3rem;
   }
@@ -1013,10 +1115,6 @@
 @media (min-width: 1439px) {
   .blockfour {
     grid-template-rows: 8.8rem 13rem 15.8rem 38.5rem;
-  }
-  .blockfour .subtitel-four {
-    font-size: 3rem;
-    line-height: 3.8rem;
   }
   .blockfour .four-titel {
     width: 43.4rem;
@@ -1075,6 +1173,37 @@
   }
   .blockfour .bright {
     font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 759px) {
+  .blockfive {
+    grid-template-columns: 48% 41%;
+    grid-template-rows: 55.1rem;
+  }
+}
+
+@media (min-width: 1439px) {
+  .blockfive {
+    margin-top: 15rem;
+    grid-template-columns: 48% 41%;
+    grid-template-rows: 63.1rem;
+  }
+  .five-left {
+    margin-left: 4%;
+    margin-top: 8.8rem;
+  }
+  .five-right {
+    margin-left: 4%;
+  }
+  .five-titel {
+    margin-top: 8.3rem;
+  }
+  .five-px {
+    margin-top: 5.7rem;
+  }
+  .five-name {
+    margin-top: 5rem;
   }
 }
 /*# sourceMappingURL=index.css.map */

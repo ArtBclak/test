@@ -3,6 +3,7 @@ import BlockOne from './components/BlockOne'
 import BlockTwo from './components/BlockTwo'
 import BlockThree from './components/BlockThree'
 import BlockFour from './components/BlockFour'
+import BlockFive from './components/BlockFive'
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <BlockTwo />
       <BlockThree />
       <BlockFour/>
+      <BlockFive/>
     </div>
   );
 }
