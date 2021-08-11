@@ -1,0 +1,174 @@
+.blockseven
+    margin-top: 10rem
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-auto-rows: 8.8rem 10rem 5.8rem 2rem 85.1rem 
+    grid-template-areas: 'titel titel' 'text text' 'logot logot' 'menu menu' 'info info'
+    
+    .seven-subtitel
+        grid-area: titel
+
+    .seven-txt
+        grid-area: text
+        width: 25rem
+        font-family: Montserrat, sans-serif
+        font-weight: 400
+        font-size: 1.4rem
+        line-height: 132.4%
+        margin: 0 auto
+
+    .seven-logo
+        grid-area: logot
+        position: relative
+        .logo-img
+            position: absolute
+            right: 0
+            width: 13rem
+
+    .seven-menu
+        grid-area: menu 
+        width: 100%
+        display: grid
+        align-items: center
+        grid-template-columns: 100%
+
+        &__name
+            font-family: Cera Pro, sans-serif
+            font-weight: 500
+            font-size: 1.3rem
+            line-height: 1.6rem
+            letter-spacing: 0.04em
+            text-transform: uppercase
+        &__ul
+            display: flex
+            justify-content: space-between
+            list-style-type: none
+            
+        &__li 
+            font-family: Cera Pro, sans-serif
+            display: flex
+            align-items: cen
+            font-weight: 500
+            font-size: 1.6rem
+            line-height: 2rem
+            &:nth-child(3)
+                color: #9A0034
+        .li-img
+            margin-left: 1.5rem
+        .li-span
+            font-weight: 700
+            font-family: Cera Pro, sans-serif
+            font-size: 1.6rem
+            line-height: 2rem
+            margin-left: .5rem
+
+    .seven-info
+        grid-area: info
+        padding-top: 9.1rem
+        display: block
+
+    .info-left
+        width: 100%
+
+    .info-img
+        width: 20rem
+        margin-left: 50%
+        transform: translate(-50%) 
+
+
+    .seven-titel
+        width: 80%
+        margin-left: 3rem
+        margin-top: 2.3rem
+        
+ 
+    .right-txt
+        margin-top: 2.1rem
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 100%
+        height: 7.5rem
+        position: relative
+
+
+    .seven-dop
+        font-family: Cera Pro, sans-serif
+        font-weight: 500
+        font-size: 1.8rem
+        line-height: 2.3rem
+
+    .screen-p
+        transform: translate( 45% ) rotate(90deg) 
+        width: 7.5rem
+        height: 1.3rem
+        font-family: Cera Pro, sans-serif
+        font-weight: 500
+        font-size: 1.3rem
+        line-height: 1.6rem
+
+    .seven-screen      
+        width: 17.5rem
+        height: 17.5rem
+        position: absolute
+        background-image: radial-gradient( #cfa382, #fff)
+        border-radius: 50%
+        opacity: 0.6
+        filter: blur(50px)
+        z-index: 0
+        right: -4.4rem
+        top: 0
+
+    .seven-btn
+        display: block
+        margin: 3rem auto 4rem auto
+        width: 18rem
+        height: 4rem
+        background: #9A0034
+        color: #fff
+        font-family: Cera Pro, sans-serif
+        font-weight: 700
+        font-size: 1.4rem
+        line-height: 1.8rem
+        border: none
+        transition: 1s
+        &:hover
+            background: #365d97
+    .seven-slider
+        width: 100%
+        display: flex
+        justify-content: space-between
+
+    .seven-arr
+        font-size: 3rem
+        background: none
+        border: none
+        border-radius: 50%
+        transition: .5s
+        color: #D7969E
+        &:hover
+            box-shadow: 0rem 0rem 1rem #365d97
+    .next
+        color: #9A0034
+
+
+
+    .social
+        margin-top: 3.9rem
+        display: flex
+        justify-content: space-between
+        align-items: center
+    .social-name
+        font-family: Cera Pro, sans-serif
+        font-weight: 500
+        font-size: 1.3rem
+        line-height: 1.6rem
+        letter-spacing: 0.04em
+    .social-links
+        width: 15.8rem
+        display: flex
+        justify-content: space-between
+        align-items: center
+    .inst
+        width: 1.6rem
+        height: 1.6rem

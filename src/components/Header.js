@@ -40,9 +40,9 @@ function Header(){
         <div>
             <nav style={ scroll <= sectOne ? navA : navF} className='nav ' >
                 <div className='hamburger btn'>
-                    <div className='h-span'></div>
-                    <div className='h-span'></div>
-                    <div className='h-span'></div>
+                    <div className='h-span' />
+                    <div className='h-span' />
+                    <div className='h-span' />
                 </div>
                 {/* <ul>
                     <li className='nav-li'><a href='#'>Home</a></li>

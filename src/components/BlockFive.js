@@ -12,7 +12,9 @@ function BlockFive() {
 
     return (
         <section className='blockfive container'>
-            <div className='five-left'><img className='five-left__img' src={img}/></div>
+            <div className='five-left'>
+                <img className='five-left__img' src={img}/>
+            </div>
 
             <div className='five-right'>
                 <h3 className='subtitel-blk'>Typography</h3>

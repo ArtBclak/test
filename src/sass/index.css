@@ -12,21 +12,21 @@
   background: #fff;
 }
 
-.container {
+.App .container {
   margin: 0 auto;
   width: 91.7vw;
 }
 
-.btn {
+.App .btn {
   cursor: pointer;
 }
 
-.btn:hover {
+.App .btn:hover {
   text-shadow: 0 0 1rem #8400ff, 0 0 1rem #8400ff;
   border-right: .1rem solid #000;
 }
 
-.titel-blk {
+.App .titel-blk {
   font-family: Cera Pro;
   font-weight: 700;
   font-size: 3.2rem;
@@ -34,7 +34,7 @@
   color: #000000;
 }
 
-.subtitel-blk {
+.App .subtitel-blk {
   font-family: Cera Pro, sans-serif;
   font-weight: 500;
   font-size: 2.2rem;
@@ -784,6 +784,7 @@
 
 .blocksixe {
   margin-top: 5rem;
+  overflow: hidden;
 }
 
 .blocksixe .sixe-top {
@@ -945,6 +946,218 @@
 .blocksixe .sixe-bot .clm-l__p {
   height: 65.2rem;
   border-right: 3px solid #BFBFBF;
+}
+
+.blockseven {
+  margin-top: 10rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 8.8rem 10rem 5.8rem 2rem 85.1rem;
+  grid-template-areas: 'titel titel' 'text text' 'logot logot' 'menu menu' 'info info';
+}
+
+.blockseven .seven-subtitel {
+  grid-area: titel;
+}
+
+.blockseven .seven-txt {
+  grid-area: text;
+  width: 25rem;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 132.4%;
+  margin: 0 auto;
+}
+
+.blockseven .seven-logo {
+  grid-area: logot;
+  position: relative;
+}
+
+.blockseven .seven-logo .logo-img {
+  position: absolute;
+  right: 0;
+  width: 13rem;
+}
+
+.blockseven .seven-menu {
+  grid-area: menu;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 100%;
+}
+
+.blockseven .seven-menu__name {
+  font-family: Cera Pro, sans-serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.blockseven .seven-menu__ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.blockseven .seven-menu__li {
+  font-family: Cera Pro, sans-serif;
+  display: flex;
+  align-items: cen;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+
+.blockseven .seven-menu__li:nth-child(3) {
+  color: #9A0034;
+}
+
+.blockseven .seven-menu .li-img {
+  margin-left: 1.5rem;
+}
+
+.blockseven .seven-menu .li-span {
+  font-weight: 700;
+  font-family: Cera Pro, sans-serif;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  margin-left: .5rem;
+}
+
+.blockseven .seven-info {
+  grid-area: info;
+  padding-top: 9.1rem;
+  display: block;
+}
+
+.blockseven .info-left {
+  width: 100%;
+}
+
+.blockseven .info-img {
+  width: 20rem;
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+
+.blockseven .seven-titel {
+  width: 80%;
+  margin-left: 3rem;
+  margin-top: 2.3rem;
+}
+
+.blockseven .right-txt {
+  margin-top: 2.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 7.5rem;
+  position: relative;
+}
+
+.blockseven .seven-dop {
+  font-family: Cera Pro, sans-serif;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+}
+
+.blockseven .screen-p {
+  transform: translate(45%) rotate(90deg);
+  width: 7.5rem;
+  height: 1.3rem;
+  font-family: Cera Pro, sans-serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+}
+
+.blockseven .seven-screen {
+  width: 17.5rem;
+  height: 17.5rem;
+  position: absolute;
+  background-image: radial-gradient(#cfa382, #fff);
+  border-radius: 50%;
+  opacity: 0.6;
+  filter: blur(50px);
+  z-index: 0;
+  right: -4.4rem;
+  top: 0;
+}
+
+.blockseven .seven-btn {
+  display: block;
+  margin: 3rem auto 4rem auto;
+  width: 18rem;
+  height: 4rem;
+  background: #9A0034;
+  color: #fff;
+  font-family: Cera Pro, sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  border: none;
+  transition: 1s;
+}
+
+.blockseven .seven-btn:hover {
+  background: #365d97;
+}
+
+.blockseven .seven-slider {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.blockseven .seven-arr {
+  font-size: 3rem;
+  background: none;
+  border: none;
+  border-radius: 50%;
+  transition: .5s;
+  color: #D7969E;
+}
+
+.blockseven .seven-arr:hover {
+  box-shadow: 0rem 0rem 1rem #365d97;
+}
+
+.blockseven .next {
+  color: #9A0034;
+}
+
+.blockseven .social {
+  margin-top: 3.9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blockseven .social-name {
+  font-family: Cera Pro, sans-serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.04em;
+}
+
+.blockseven .social-links {
+  width: 15.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blockseven .inst {
+  width: 1.6rem;
+  height: 1.6rem;
 }
 
 @media (min-width: 759px) {
@@ -1381,6 +1594,71 @@
   }
   .blocksixe .sixe-bot {
     margin-top: 17rem;
+  }
+}
+
+@media (min-width: 1439px) {
+  .blockseven {
+    margin-top: 15rem;
+    grid-auto-rows: 8.8rem 15.8rem 2rem 85.1rem;
+    grid-template-areas: 'titel titel' 'text logot' 'menu menu' 'info info';
+  }
+  .blockseven .seven-txt {
+    width: 37rem;
+  }
+  .blockseven .seven-menu {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 8.6% 34.2% 57.2%;
+  }
+  .blockseven .seven-info {
+    grid-area: info;
+    padding-top: 9.1rem;
+    display: flex;
+  }
+  .blockseven .info-left {
+    width: 40.17%;
+  }
+  .blockseven .info-img {
+    width: 47rem;
+    margin-left: 0;
+    transform: translate(0);
+  }
+  .blockseven .info-right {
+    width: 60%;
+  }
+  .blockseven .seven-titel {
+    width: 37rem;
+    margin-left: 13rem;
+    margin-top: 8.3rem;
+    font-size: 5.6rem;
+  }
+  .blockseven .right-txt {
+    margin-top: 8.1rem;
+  }
+  .blockseven .seven-dop {
+    margin-left: 23rem;
+  }
+  .blockseven .seven-btn {
+    display: block;
+    margin-top: 6.7rem;
+    margin-left: 13rem;
+    margin-bottom: 10rem;
+    width: 18rem;
+    height: 4rem;
+  }
+  .blockseven .seven-slider {
+    margin-left: 13rem;
+    width: 36.9rem;
+  }
+  .blockseven .social {
+    margin-top: 14.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .blockseven .social-name {
+    margin-left: 3rem;
   }
 }
 /*# sourceMappingURL=index.css.map */
