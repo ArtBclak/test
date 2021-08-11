@@ -1160,11 +1160,113 @@
   height: 1.6rem;
 }
 
+.blockeight {
+  height: 67rem;
+  transform: translateY(10rem);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.blockeight .eight-bg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 25rem;
+}
+
+.blockeight .eight-top {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  height: 10.8rem;
+}
+
+.blockeight .eight-titel {
+  font-family: Cera Pro, sans-serif;
+  font-weight: 700;
+}
+
+.blockeight .titel-text {
+  align-self: flex-end;
+}
+
+.blockeight .eight-bot {
+  width: 100%;
+  height: 12.3rem;
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blockeight .eight-sale {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 20rem;
+}
+
+.blockeight .eight-sale__name {
+  font-family: Cera Pro, sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.blockeight .eight-sale__arr {
+  color: #9A0034;
+  font-size: 3rem;
+  margin-bottom: .5rem;
+}
+
+.blockeight .eight-sale__up {
+  font-family: Cera Pro, sans-serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.04em;
+  text-transform: lowercase;
+}
+
+.blockeight .eight-check {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.blockeight .eight-check__p {
+  font-family: Cera Pro, sans-serif;
+  font-weight: normal;
+  font-size: 1.3rem;
+  line-height: 154%;
+  letter-spacing: 0.03em;
+}
+
+.blockeight .eight-check__p-img {
+  margin-right: 1.4rem;
+}
+
+.blockeight .eight-name {
+  position: absolute;
+  transform: translate(-30%, 50%) rotate(-90deg);
+  top: 44rem;
+  left: 1%;
+  font-family: Cera Pro, sans-serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.04em;
+}
+
 @media (min-width: 759px) {
   .container {
     width: 89.85vw;
   }
-  .titel-blk {
+  .container .titel-blk {
     font-size: 3.2rem;
   }
 }
@@ -1173,10 +1275,10 @@
   .container {
     width: 80.21vw;
   }
-  .titel-blk {
+  .container .titel-blk {
     font-size: 3.6rem;
   }
-  .subtitel-blk {
+  .container .subtitel-blk {
     font-size: 2.4rem;
     line-height: 3rem;
   }
@@ -1186,11 +1288,11 @@
   .container {
     width: 81.32vw;
   }
-  .titel-blk {
+  .container .titel-blk {
     font-size: 5.6rem;
     line-height: 7rem;
   }
-  .subtitel-blk {
+  .container .subtitel-blk {
     font-size: 3rem;
     line-height: 3.8rem;
   }
@@ -1659,6 +1761,25 @@
   }
   .blockseven .social-name {
     margin-left: 3rem;
+  }
+}
+
+@media (min-width: 1199px) {
+  .blockeight {
+    height: 67rem;
+    padding-left: 10rem;
+  }
+  .blockeight .eight-bg {
+    width: 42rem;
+  }
+  .blockeight .eight-top {
+    width: 36rem;
+    height: 16.8rem;
+  }
+  .blockeight .eight-bot {
+    width: 50.8rem;
+    height: 12.3rem;
+    margin-top: 14rem;
   }
 }
 /*# sourceMappingURL=index.css.map */
