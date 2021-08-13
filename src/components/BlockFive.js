@@ -11,9 +11,9 @@ function BlockFive() {
 
 
     return (
-        <section className='blockfive container'>
+        <section className='container blockfive'>
             <div className='five-left'>
-                <img className='five-left__img' src={img}/>
+                <img className='five-left__img' loading='lazy' alt='photo'  src={img}/>
             </div>
 
             <div className='five-right'>

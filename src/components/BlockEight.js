@@ -4,8 +4,8 @@ import img from '../img/check.svg'
 
 function BlockEight() {
     return (
-        <section className='blockeight container'>
-            <img className='eight-bg' src={bg} />
+        <section className='container blockeight'>
+            <img className='eight-bg' loading='lazy' alt='bg'  src={bg} />
             <div className='eight-top'>
                 <h2 className='titel-blk eight-titel'>Our own production</h2>
                 <p className='titel-text'>of women’s clothing</p>

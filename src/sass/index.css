@@ -10,23 +10,24 @@
 .App {
   width: 100%;
   background: #fff;
+  display: grid;
+  justify-content: center;
 }
 
-.App .container {
-  margin: 0 auto;
+.container {
   width: 91.7vw;
 }
 
-.App .btn {
+.btn {
   cursor: pointer;
 }
 
-.App .btn:hover {
+.btn:hover {
   text-shadow: 0 0 1rem #8400ff, 0 0 1rem #8400ff;
   border-right: .1rem solid #000;
 }
 
-.App .titel-blk {
+.titel-blk {
   font-family: Cera Pro;
   font-weight: 700;
   font-size: 3.2rem;
@@ -34,12 +35,37 @@
   color: #000000;
 }
 
-.App .subtitel-blk {
+.subtitel-blk {
   font-family: Cera Pro, sans-serif;
   font-weight: 500;
   font-size: 2.2rem;
   line-height: 2.8rem;
   letter-spacing: 0.03em;
+}
+
+.product-name {
+  overflow: hidden;
+  height: 4.5rem;
+  font-family: Cera Pro, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: none;
+  background: none;
+  color: #000000;
+  appearance: none;
+}
+
+.product-name:hover {
+  border-top: 1px solid #00000065;
+}
+
+.product-name:focus {
+  border-top: 1px solid #00000065;
+  overflow: auto;
 }
 
 .nav {
@@ -103,8 +129,8 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  position: relative;
   display: flex;
+  position: relative;
 }
 
 .blockone-left {
@@ -188,8 +214,8 @@
   height: 600px;
   display: block;
   position: relative;
-  margin-top: 13vh;
-  padding-top: 5rem;
+  margin-top: 8rem;
+  padding-top: 4.3rem;
 }
 
 .subtitel-two {
@@ -333,8 +359,6 @@
 }
 
 .blockthree {
-  margin-top: 5rem;
-  padding-top: 5rem;
   position: relative;
   display: grid;
   grid-template-columns: 1fr;
@@ -344,9 +368,7 @@
 
 .titel-three {
   position: absolute;
-  top: 0;
-  left: 50%;
-  width: 50%;
+  width: 100%;
 }
 
 .blockthree-left__img {
@@ -465,31 +487,6 @@
   margin: .5rem auto;
 }
 
-.product-name {
-  overflow: hidden;
-  height: 4.5rem;
-  font-family: Cera Pro, sans-serif;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 18px;
-  text-align: center;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  border: none;
-  background: none;
-  color: #000000;
-  appearance: none;
-}
-
-.product-name:hover {
-  border-top: 1px solid #00000065;
-}
-
-.product-name:focus {
-  border-top: 1px solid #00000065;
-  overflow: auto;
-}
-
 .product-price {
   text-align: center;
   margin-top: 1.5rem;
@@ -501,7 +498,7 @@
 
 .blockfour {
   position: relative;
-  margin-top: 5rem;
+  padding-top: 5rem;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 5.8rem 11rem 7.4rem 9.8rem 34.7rem 16.6rem;
@@ -680,7 +677,7 @@
 }
 
 .blockfive {
-  margin-top: 10rem;
+  padding-top: 10rem;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
@@ -783,7 +780,7 @@
 }
 
 .blocksixe {
-  margin-top: 5rem;
+  padding-top: 5rem;
   overflow: hidden;
 }
 
@@ -949,8 +946,10 @@
 }
 
 .blockseven {
-  margin-top: 10rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
   display: grid;
+  overflow-x: hidden;
   grid-template-columns: 1fr 1fr;
   grid-auto-rows: 8.8rem 10rem 5.8rem 2rem 85.1rem;
   grid-template-areas: 'titel titel' 'text text' 'logot logot' 'menu menu' 'info info';
@@ -1161,9 +1160,9 @@
 }
 
 .blockeight {
-  height: 67rem;
-  transform: translateY(10rem);
   position: relative;
+  height: 67rem;
+  margin-top: 10rem;
   display: flex;
   flex-direction: column;
 }
@@ -1262,11 +1261,253 @@
   letter-spacing: 0.04em;
 }
 
+.blocknine {
+  position: relative;
+  height: 180.3rem;
+  margin-top: 12.3rem;
+  overflow-x: hidden;
+}
+
+.blocknine .nine-top {
+  width: 100%;
+  height: 12.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blocknine .nine-titel {
+  width: 100%;
+}
+
+.blocknine .nine-txt {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 132.4%;
+  color: #292929;
+}
+
+.blocknine .nine-center {
+  margin-top: 5rem;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 99%;
+}
+
+.blocknine .dimensions {
+  display: flex;
+  justify-content: space-between;
+  width: 19.2rem;
+}
+
+.blocknine .dimensions-p {
+  font-family: Cera Pro, sans-serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.04em;
+}
+
+.blocknine .nine-filter {
+  margin-top: 3rem;
+  width: 100%;
+  text-align: right;
+  font-family: Cera Pro, sans-serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 154%;
+}
+
+.blocknine .photo-name {
+  position: absolute;
+  transform: translate(-40%, 100%) rotate(-90deg);
+  font-family: Cera Pro, sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  text-transform: uppercase;
+}
+
+.blocknine .photo-one {
+  position: relative;
+  padding-bottom: 5rem;
+}
+
+.blocknine .photo-one__name {
+  top: 11rem;
+}
+
+.blocknine .nine-imgOne {
+  margin-left: 50%;
+  transform: translate(-50%);
+  margin-top: 3rem;
+  width: 19rem;
+}
+
+.blocknine .nine-larr {
+  position: absolute;
+  right: 0;
+  top: 56%;
+  font-size: 3rem;
+}
+
+.blocknine .photo-two {
+  position: relative;
+}
+
+.blocknine .photo-two__like {
+  position: absolute;
+  top: 2.4rem;
+  right: 2.9rem;
+  font-size: 2rem;
+  color: #B3B3B3;
+}
+
+.blocknine .nine-imgTwo {
+  margin-bottom: 1.6rem;
+  margin-left: 50%;
+  transform: translate(-50%);
+  width: 19rem;
+}
+
+.blocknine .photo-stiker {
+  width: 6rem;
+  height: 2.5rem;
+  background: #9A0034;
+  color: #fff;
+  position: absolute;
+  top: 2.1rem;
+  left: 7.9rem;
+  text-align: center;
+  padding-top: .4rem;
+  font-family: Cera Pro, sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+}
+
+.blocknine .nine-bot {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 99%;
+}
+
+.blocknine .nine-bot__info {
+  height: 20rem;
+  display: grid;
+  align-items: end;
+  padding-bottom: 5rem;
+}
+
+.blocknine .bot-sort {
+  width: 90%;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blocknine .bot-sort__name {
+  font-family: Cera Pro, sans-serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 154%;
+  width: 7.3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.blocknine .nine-rarr {
+  font-size: 3rem;
+  margin-bottom: .5rem;
+  transform: rotate(90deg);
+}
+
+.blocknine .nine-new {
+  width: 86.1%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.blocknine .nine-new__p {
+  font-family: Cera Pro, sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 125%;
+  text-transform: uppercase;
+}
+
+.blocknine .nine-new__like {
+  font-size: 1.6rem;
+  color: #9A0034;
+}
+
+.blocknine .photo-three {
+  width: 100%;
+}
+
+.blocknine .photo-three__name {
+  transform: translate(-4.5rem, 200%) rotate(-90deg);
+}
+
+.blocknine .nine-imgThree {
+  width: 19rem;
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+
+.blocknine .photo-color {
+  display: inline-flex;
+  margin-top: 3.3rem;
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+
+.blocknine .p-color {
+  margin: 0 .8rem;
+  width: 1rem;
+  height: 1rem;
+}
+
+.blocknine .name-inside {
+  margin-top: 5rem;
+  width: 95%;
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+
+.blocknine .photo-price {
+  display: inline-flex;
+  align-item: center;
+  margin-top: 1.5rem;
+  margin-left: 50%;
+  transform: translate(-50%);
+  font-family: Cera Pro, sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: #9A0034;
+}
+
+.blocknine .photo-price .full-price {
+  margin-top: .2rem;
+  margin-left: .8rem;
+  font-family: Cera Pro, sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  text-decoration: line-through;
+  color: #565656;
+}
+
 @media (min-width: 759px) {
-  .container {
+  .app .container {
     width: 89.85vw;
   }
-  .container .titel-blk {
+  .app .container .titel-blk {
     font-size: 3.2rem;
   }
 }
@@ -1456,11 +1697,15 @@
 
 @media (min-width: 759px) {
   .blockthree {
-    padding-top: 0;
+    margin-top: 10rem;
     height: 50rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 85%;
+  }
+  .titel-three {
+    left: 50%;
+    width: 50%;
   }
 }
 
@@ -1635,7 +1880,7 @@
 
 @media (min-width: 1919px) {
   .blockfour {
-    margin-top: 15rem;
+    padding-top: 15rem;
     grid-template-rows: 8.8rem 13rem 15.8rem 38.5rem;
   }
   .blockfour .blockfour-txt {
@@ -1665,7 +1910,7 @@
 
 @media (min-width: 1439px) {
   .blockfive {
-    margin-top: 15rem;
+    padding-top: 15rem;
     grid-template-columns: 48% 41%;
     grid-template-rows: 63.1rem;
   }
@@ -1689,7 +1934,7 @@
 
 @media (min-width: 1439px) {
   .blocksixe {
-    margin-top: 10rem;
+    padding-top: 10rem;
   }
   .blocksixe .top-box {
     top: 16rem;
@@ -1701,7 +1946,7 @@
 
 @media (min-width: 1439px) {
   .blockseven {
-    margin-top: 15rem;
+    padding-top: 15rem;
     grid-auto-rows: 8.8rem 15.8rem 2rem 85.1rem;
     grid-template-areas: 'titel titel' 'text logot' 'menu menu' 'info info';
   }
@@ -1754,7 +1999,7 @@
     width: 36.9rem;
   }
   .blockseven .social {
-    margin-top: 14.9rem;
+    margin-top: 11.9rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1764,7 +2009,7 @@
   }
 }
 
-@media (min-width: 1199px) {
+@media (min-width: 1439px) {
   .blockeight {
     height: 67rem;
     padding-left: 10rem;
@@ -1780,6 +2025,98 @@
     width: 50.8rem;
     height: 12.3rem;
     margin-top: 14rem;
+  }
+}
+
+@media (min-width: 1439px) {
+  .blocknine {
+    height: 212.3rem;
+    margin-top: 12.3rem;
+  }
+  .blocknine .nine-top {
+    width: 56.7rem;
+  }
+  .blocknine .nine-center {
+    margin-top: 10rem;
+    grid-template-columns: 51rem 57rem;
+  }
+  .blocknine .nine-filter {
+    margin-top: 21.1rem;
+  }
+  .blocknine .photo-one {
+    padding-bottom: 0;
+  }
+  .blocknine .photo-one__name {
+    top: 36rem;
+  }
+  .blocknine .nine-imgOne {
+    margin-left: 5rem;
+    transform: translate(0);
+    margin-top: 10rem;
+    width: 46rem;
+  }
+  .blocknine .nine-larr {
+    right: -5.8rem;
+  }
+  .blocknine .photo-two {
+    position: relative;
+  }
+  .blocknine .photo-two__like {
+    position: absolute;
+    top: 2.4rem;
+    right: 2.9rem;
+    font-size: 2rem;
+    color: #B3B3B3;
+  }
+  .blocknine .nine-imgTwo {
+    margin-bottom: 1.6rem;
+    margin-left: 5rem;
+    transform: translate(0);
+    width: 52.2rem;
+  }
+  .blocknine .nine-bot {
+    grid-template-columns: 43rem 52rem;
+  }
+  .blocknine .nine-bot__info {
+    height: 58rem;
+    padding-bottom: 0;
+  }
+  .blocknine .bot-sort {
+    width: 77.45%;
+    margin-left: 22.55%;
+  }
+  .blocknine .nine-rarr {
+    transform: rotate(0);
+  }
+  .blocknine .nine-new {
+    width: 86.1%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .blocknine .nine-new__p {
+    font-family: Cera Pro, sans-serif;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 125%;
+    text-transform: uppercase;
+  }
+  .blocknine .nine-new__like {
+    font-size: 1.6rem;
+    color: #9A0034;
+  }
+  .blocknine .photo-three {
+    margin-left: 2.2rem;
+  }
+  .blocknine .photo-three__name {
+    transform: translate(-4.5rem, 200%) rotate(-90deg);
+  }
+  .blocknine .nine-imgThree {
+    width: 47rem;
+    margin-left: 5rem;
+    transform: translate(0);
+  }
+  .blocknine .name-inside {
+    width: 31.9rem;
   }
 }
 /*# sourceMappingURL=index.css.map */

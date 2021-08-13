@@ -2,7 +2,7 @@ import React from 'react'
 
 function BlockSixe() {
     return (
-        <section className='blocksixe container'>
+        <section className='container blocksixe'>
 
             <div className='sixe-top'>
                 <div className='top-name'>

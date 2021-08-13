@@ -5,7 +5,7 @@ function BlockFour() {
 
 
     return (
-        <section className='blockfour container'>
+        <section className='container blockfour'>
             <h3 className='subtitel-blk subtitel-four'>Colors</h3>
             <biv className='blockfour-name'><p className='blockfour-name__p'>DARK</p></biv>
             <div className='blockfour-txt'><p className='blockfour-txt__p'>Основная деятельность заказчика такая. У него есть такие проблемы. При создании нового дизайна учитывались такие факторы - фактор1, фактор2 и фактор3. </p></div>

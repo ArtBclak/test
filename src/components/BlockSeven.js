@@ -10,11 +10,11 @@ import yt from '../img/yt.svg'
 
 function BlockSeven() {
     return (
-        <section className='blockseven container'>
+        <section className='container blockseven'>
             <h3 className='subtitel-blk seven-subtitel'>Main page</h3>
             <p className='seven-txt'>Мы создали приятный, удобный и самое важное - понятный интерфейс, что бы пользователи с легкостью взаимодействовали с продукцией.</p>
             <div className='seven-logo'>
-                <img src={logo} className='logo-img' />
+                <img src={logo} loading='lazy' alt='logo' className='logo-img' />
             </div>
             
             <div className='seven-menu'>
@@ -33,7 +33,7 @@ function BlockSeven() {
             </div>
             <div className='seven-info'>
                 <div className='info-left'>
-                    <img src={bg} className='info-img' />
+                    <img src={bg} className='info-img' loading='lazy' alt='photo' />
                 </div>
                 <div className='info-right'>
                     <h2 className='titel-blk seven-titel'>НОВАЯ КОЛЛЕКЦИЯ</h2>

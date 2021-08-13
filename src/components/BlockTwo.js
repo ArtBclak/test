@@ -40,7 +40,7 @@ function BlockTwo(){
     }
     
     return( 
-        <section className='blocktwo container'>
+        <section className='container blocktwo'>
             <h3 className='subtitel-blk subtitel-two'>Main target</h3>
             <div  className='blocktwo-l'>
                 <div className='blocktwo-l__year'><p className='year-p'>1920</p></div>

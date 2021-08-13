@@ -29,7 +29,7 @@ function BlockThree(){
 
 
     return(
-        <section className='blockthree container'>
+        <section className='container blockthree'>
             <h2 className='titel-blk titel-three'>The world of fashion</h2>
             <div className='blockthree-left'>
                 <div className='three-fltr'>
@@ -46,7 +46,7 @@ function BlockThree(){
                 })}
                 </div>
                 
-                <img className='blockthree-left__img' loading='lazy' src={imgOne} /> 
+                <img className='blockthree-left__img' loading='lazy' src={imgOne} alt='product' /> 
                 
                 
                 
@@ -55,7 +55,7 @@ function BlockThree(){
                 <p className='right-titel'>is woven from stories</p>
                 <p className='right-subtitel'>product card</p>
                 <div className='three-products'>
-                    <img className='rigth-img' loading='lazy' src={imgTwo}/>
+                    <img className='rigth-img' loading='lazy' alt='product' src={imgTwo}/>
                     <ul className='rigth-colors'>
                         <li className='colors-li' style={{border: '1px solid #000'}}><div className='color cream'/></li>
                         <li className='colors-li'><div className='color blue'/></li>

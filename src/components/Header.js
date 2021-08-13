@@ -6,13 +6,13 @@ import cart from '../img/icon_cart.svg'
 import arr from '../img/Arr.svg'
 
 const navA = {
-    position: 'absolute',
+    position: 'absolute'
 }
 const navF = {
-    width: '93%',
     position: 'fixed',
-    top: 0,
-    left: '50% ',
+    width: '93%',
+    top: '0',
+    left: '50%',
     transform: 'translate(-50%)',
     background: '#7cfff8',
     height: '7vh',
@@ -33,35 +33,35 @@ function Header(){
     }, []);
 
     
-    let sectOne = document.body.clientHeight /3.5
+    let sectOne = document.body.clientHeight / 10
 
 
     return(
-        <div>
-            <nav style={ scroll <= sectOne ? navA : navF} className='nav ' >
-                <div className='hamburger btn'>
-                    <div className='h-span' />
-                    <div className='h-span' />
-                    <div className='h-span' />
-                </div>
-                {/* <ul>
-                    <li className='nav-li'><a href='#'>Home</a></li>
-                    <li className='nav-li'><a href='#'>Colors</a></li>
-                    <li className='nav-li'><a href='#'>Thank You</a></li>
-                </ul> */}
+ 
+        <nav style={ scroll <= sectOne ? navA : navF} className='nav ' >
+            <div className='hamburger btn'>
+                <div className='h-span' />
+                <div className='h-span' />
+                <div className='h-span' />
+            </div>
+            {/* <ul>
+                <li className='nav-li'><a href='#'>Home</a></li>
+                <li className='nav-li'><a href='#'>Colors</a></li>
+                <li className='nav-li'><a href='#'>Thank You</a></li>
+            </ul> */}
 
-                <div className='h-links'>
-                    <a className='h-a btn' href='#'><img src={like} className='h-icon'/></a>
-                    <a className='h-a btn' href='#'><img src={camera} className='h-icon'/></a>
-                    <a className='h-a btn' href='#'><img src={cart} className='h-icon' /></a>
-                </div>
-                
-                <div className='box-lang btn'>
-                    <p className='language'>ru</p>
-                    <img src={arr} className='n-arr'/>
-                </div>
-            </nav>
-        </div>
+            <div className='h-links'>
+                <a className='h-a btn' href='#'><img src={like} className='h-icon'/></a>
+                <a className='h-a btn' href='#'><img src={camera} className='h-icon'/></a>
+                <a className='h-a btn' href='#'><img src={cart} className='h-icon' /></a>
+            </div>
+            
+            <div className='box-lang btn'>
+                <p className='language'>ru</p>
+                <img src={arr} className='n-arr'/>
+            </div>
+        </nav>
+ 
         
     )
         

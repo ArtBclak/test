@@ -9,30 +9,51 @@
 .App 
     width: 100%
     background: #fff
-
-    .container
-        margin: 0 auto
-        width: 91.7vw
-    .btn
-        cursor: pointer
-        &:hover
-            text-shadow: 0 0 1rem #8400ff, 0 0 1rem #8400ff
-            border-right: .1rem solid #000
-
-
-    .titel-blk
-        font-family: Cera Pro
-        font-weight: 700
-        font-size: 3.2rem
-        line-height: 100%
-        color: #000000
+    display: grid
+    justify-content: center
+.container
+    width: 91.7vw
+.btn
+    cursor: pointer
+    &:hover
+        text-shadow: 0 0 1rem #8400ff, 0 0 1rem #8400ff
+        border-right: .1rem solid #000
 
 
+.titel-blk
+    font-family: Cera Pro
+    font-weight: 700
+    font-size: 3.2rem
+    line-height: 100%
+    color: #000000
 
-    .subtitel-blk
-        font-family: Cera Pro, sans-serif
-        font-weight: 500
-        font-size: 2.2rem
-        line-height: 2.8rem
-        letter-spacing: 0.03em
+
+
+.subtitel-blk
+    font-family: Cera Pro, sans-serif
+    font-weight: 500
+    font-size: 2.2rem
+    line-height: 2.8rem
+    letter-spacing: 0.03em
+
+.product-name
+    overflow: hidden
+    height: 4.5rem
+    font-family: Cera Pro, sans-serif
+    font-weight: 300
+    font-size: 14px
+    line-height: 18px
+    text-align: center
+    letter-spacing: 0.05em
+    text-transform: uppercase
+    border: none
+    background: none
+    color: #000000
+    appearance: none
+    &:hover
+        border-top: 1px solid #00000065
+    &:focus
+        border-top: 1px solid #00000065
+        overflow: auto
+    
 
