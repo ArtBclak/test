@@ -1,0 +1,173 @@
+.blockten
+    height: 95rem
+    margin-top: 15rem
+
+.ten-top
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    width: 100%
+    height: 13.4rem
+    margin-bottom: 5rem
+
+.subtitel-txt
+    align-self: flex-end
+    width: 78.73%
+    font-family: Montserrat, sans-serif
+    font-weight: 400
+    font-size: 1.4rem
+    line-height: 132.4%
+    color: #292929
+
+
+.ten-center
+    display: grid
+    grid-template-columns: 10% 25% 65% 
+    grid-template-areas: 'left mid right'
+
+.center-left
+    grid-area: left
+    position: relative
+    &__like
+        margin-top: 10rem 
+        width: 2rem 
+    &__name
+        margin-top: 10rem 
+        width: 9.5rem
+        height: 1.9rem 
+        transform: translate(-40%, 200%) rotate(-90deg)
+        font-family: Cera Pro, sans-serif
+        font-weight: 500
+        font-size: 1.4rem
+        line-height: 132.4%
+
+.center-mid
+    grid-area: mid
+    &__txt
+        margin-top: 10rem
+        font-family: Cera Pro, sans-serif
+        font-weight: 500
+        font-size: 1.3rem
+        line-height: 1.6rem
+    &__rarr
+        font-size: 3rem
+    &__sale
+        margin-top: 9.5rem
+        font-family: Cera Pro, sans-serif
+        font-weight: 500
+        font-size: 1.6rem
+        line-height: 125% 
+        text-transform: uppercase
+
+.center-right
+    grid-area: right
+    position: relative
+    &__img
+        width: 15rem
+        margin-left: 50%
+        transform: translate(-50%)
+    &__name
+        width: 7.9rem
+        height: 1.6rem
+        position: absolute
+        top: 10rem
+        right: 0
+        transform: translate(40%, 200%) rotate(90deg)
+        font-family: Cera Pro, sans-serif
+        font-weight: 500
+        font-size: 1.3rem
+        line-height: 1.6rem
+        text-transform: uppercase
+
+
+.ten-bot
+    margin-top: 5rem
+    display: grid
+    grid-template-columns: 65% 25% 10%
+    grid-template-areas: 'left mid right'
+
+.bot-left
+    position: relative
+    grid-area: left
+    &__block
+        display: none
+    &__name
+        position: absolute
+        top: 10rem
+        transform: translate(-40%, 100%) rotate(-90deg)
+        width: 7.2rem
+        height: 2rem
+        font-family: Cera Pro, sans-serif
+        font-weight: 500
+        font-size: 1.6rem
+        line-height: 2rem
+        text-transform: uppercase
+    &__img
+        margin-left: 50%
+        transform: translate(-50%)
+        width: 15rem
+
+.bot-mid
+    grid-area: mid
+    &__categories
+        margin-top: 10rem
+        font-family: Cera Pro, sans-serif
+        font-weight: 500
+        font-size: 1.3rem
+        line-height: 154%
+        width: 8.9rem
+        display: flex
+        justify-content: space-between
+    &__filters
+        margin-top: 5rem
+        font-family: Cera Pro, sans-serif
+        font-weight: 500
+        font-size: 1.3rem
+        line-height: 154%
+        width: 5.9rem
+        display: flex
+        justify-content: space-between
+    .ten-slider
+        margin-top: 16.2rem
+        width: 17.6rem
+        transform: translate(-100%)
+        display: flex
+        align-items: center
+        justify-content: space-between
+        cursor: pointer
+        &__larr
+            font-size: 3rem
+            margin-bottom: .5rem
+        &__rarr
+            font-size: 3rem
+            margin-bottom: .5rem
+        &__numbers
+            display: flex
+            justify-content: space-between
+            width: 10rem
+            list-style-type: none
+.bot-right
+    grid-area: right
+    position: relative
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    &__blocks
+        margin-top: 7rem
+        width: 4.5rem
+        display: flex
+        justify-content: space-between
+    &__block-blk
+        width: 1.5rem
+        height: 1.5rem
+        font-size: 1.5rem
+    &__p
+        position: absolute
+        top: 20rem
+        width: 9.5rem
+        height: 1.9rem
+        font-family: Cera Pro, sans-serif
+        font-weight: 500
+        font-size: 1.4rem
+        line-height: 132.4%
+        transform: translate(40%, 200%) rotate(90deg)
