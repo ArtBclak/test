@@ -6,7 +6,7 @@ function Footer() {
     return (
         <footer className='container footer'>
             <div className='footer-left'>
-                <img className='footer-logo' src={logo}/>
+                <img className='footer-logo' loading='lazy' alt='logo' src={logo}/>
                 <div className='footer-gradient'/>
                 <p className='footer-p'>V I R N A</p>
             </div>

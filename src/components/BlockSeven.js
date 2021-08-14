@@ -52,9 +52,9 @@ function BlockSeven() {
                     <div className='social'>
                         <p className='social-name'>Social</p>
                         <div className='social-links'>
-                            <a href='#' className='btn'><img className='social-img inst' src={inst}/></a>
-                            <a href='#' className='btn'><img className='social-img fb' src={fb}/></a>
-                            <a href='#' className='btn'><img className='social-img yt' src={yt}/></a>
+                            <a href='#' className='btn'><img className='social-img inst' loading='lazy' alt='instagram' src={inst}/></a>
+                            <a href='#' className='btn'><img className='social-img fb' loading='lazy' alt='facebook' src={fb}/></a>
+                            <a href='#' className='btn'><img className='social-img yt' loading='lazy' alt='youtube' src={yt}/></a>
                         </div>
                     </div>
                 </div>

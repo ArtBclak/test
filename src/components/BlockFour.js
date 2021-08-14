@@ -25,8 +25,6 @@ function BlockFour() {
                 <div className='four-color four-yellow'/>
             </div>
             <p className='bright'>bright</p>
-
-            
         </section>
     )
 }

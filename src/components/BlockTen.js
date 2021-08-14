@@ -13,7 +13,7 @@ function BlockTen() {
             </div>
             <div className='ten-center'>
                 <div className='center-left'>
-                    <img className='center-left__like' src={like}/>
+                    <img className='center-left__like' src={like} loading='lazy' alt='like'/>
                     <p className='center-left__name'>Mobile version</p>
                 </div>
 
@@ -24,7 +24,7 @@ function BlockTen() {
                 </div>
 
                 <div className='center-right'>
-                    <img className='center-right__img' src={imgOne}/>
+                    <img className='center-right__img' src={imgOne} loading='lazy' alt='photo one'/>
                     <div className='center-right__name'>Start scrin</div>
                 </div>
             </div>
@@ -34,7 +34,7 @@ function BlockTen() {
                 <div className='bot-left'>
                     <div className='bot-left__block'/>
                     <p className='bot-left__name'>Catalog</p>
-                    <img className='bot-left__img' src={imgTwo}/>
+                    <img className='bot-left__img' src={imgTwo} loading='lazy' alt='photo two'/>
                 </div>
                 <div className='bot-mid'>
                     <p className='bot-mid__categories'>Categories <img src={check}/></p>

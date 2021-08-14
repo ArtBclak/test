@@ -12,7 +12,6 @@ import check from '../img/check.svg'
 
 function BlockThree(){
 
-
     const box = [
         { titel: 'size', value: ['S / M', 'M / XL', 'XXL']},
         { titel: 'style', value: ['casual', 'lorem', 'lorem2']},
@@ -23,10 +22,6 @@ function BlockThree(){
         name: 'Название товара может быть длинное, по этому я написал название чуть больше для поверки реализации', 
         price: '1150 грн'
     }
-
-
-
-
 
     return(
         <section className='container blockthree'>

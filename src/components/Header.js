@@ -33,7 +33,7 @@ function Header(){
     }, []);
 
     
-    let sectOne = document.body.clientHeight / 10
+    let sectOne = document.body.clientHeight / 20
 
 
     return(
@@ -58,7 +58,7 @@ function Header(){
             
             <div className='box-lang btn'>
                 <p className='language'>ru</p>
-                <img src={arr} className='n-arr'/>
+                <img src={arr} loading='lazy' alt='arrow' className='n-arr'/>
             </div>
         </nav>
  

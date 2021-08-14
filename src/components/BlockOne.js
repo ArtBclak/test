@@ -12,7 +12,7 @@ function BlockOne(){
         <section className='container blockone'>
 
             <div className='blockone-left'>
-                <img src={logo} loading='lazy' className='logo'></img>
+                <img src={logo} loading='lazy' alt='logo' className='logo'></img>
                 <h1 className='titel'>Ukrainian brand</h1>
                 <p className='titel-txt'>of women’s clothing</p>
             </div>
