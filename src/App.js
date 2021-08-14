@@ -9,6 +9,7 @@ import BlockSeven from './components/BlockSeven'
 import BlockEight from './components/BlockEight'
 import BlockNine from './components/BlockNine'
 import BlockTen from './components/BlockTen'
+import Footer from './components/Footer'
 
 
 
@@ -27,6 +28,7 @@ function App() {
       <BlockEight/>
       <BlockNine/>
       <BlockTen/>
+      <Footer/>
     </div>
   );
 }
